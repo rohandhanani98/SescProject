@@ -54,18 +54,18 @@ public class StudentController {
 		this.invoiceService=invoiceService;
 	}
 	
-
+	@GetMapping("/student/{studentId}")
+	public Student getStudentById(@PathVariable String studentId) {
+		Student student=student_Service.findStudentById(studentId);
+		return student;
+	}  
+	
 	@GetMapping("/student")
 	public List<Student>getAllStudent() {
 		List<Student> students=student_Service.findAllStudent();
 		return students;
 	}
 	
-	@GetMapping("/student/{studentId}")
-	public Student getStudentById(@PathVariable String studentId) {
-		Student student=student_Service.findStudentById(studentId);
-		return student;
-	}  
 	
 	@PostMapping("/student")
 	public ResponseEntity<Object> createStudent(@RequestBody Student student) {
