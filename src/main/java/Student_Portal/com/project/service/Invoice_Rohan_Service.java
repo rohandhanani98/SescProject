@@ -39,19 +39,6 @@ public class Invoice_Rohan_Service {
 	    	System.out.println("ReferenceExists");
 	    }
 	    return responseEntity.getBody();
-//	    ResponseEntity<CollectionModel<EntityModel<Invoice>>> responseEntity = 
-//	            restTemplate.exchange(apiUrl, HttpMethod.GET, null, 
-//	                                   new ParameterizedTypeReference<CollectionModel<EntityModel<Invoice>>>() {});
-//
-//	        if (responseEntity.getStatusCode().is2xxSuccessful()) {
-//	            CollectionModel<EntityModel<Invoice>> invoiceResources = responseEntity.getBody();
-//	            if (invoiceResources != null) {
-//	                for (EntityModel<Invoice> invoiceResource : invoiceResources.getContent()) {
-//	                    Invoice invoice = invoiceResource.getContent();
-//	                    invoiceRepository.save(invoice); 
-//	                }
-//	            }
-//	        } 
 	}
 
 //	public Invoice findInvoiceByStudentId(String studentid) {
