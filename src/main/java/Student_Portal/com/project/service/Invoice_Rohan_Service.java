@@ -41,10 +41,6 @@ public class Invoice_Rohan_Service {
 	    return responseEntity.getBody();
 	}
 
-//	public Invoice findInvoiceByStudentId(String studentid) {
-//		Invoice invoice=invoiceRepository.findByStudentid(studentid);
-//		return invoice;
-//	}
 	
 	public Invoice findInvoiceByStudentId(String studentid) {
 	    try {
