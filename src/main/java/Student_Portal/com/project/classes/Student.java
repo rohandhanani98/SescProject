@@ -63,11 +63,11 @@ public class Student {
 	public boolean isHasOutstandingBalance() {
 		return hasOutstandingBalance;
 	}
-	public void setHasOutstandingBalance(boolean hasOutstandingBalance) {
-		this.hasOutstandingBalance = hasOutstandingBalance;
-	}
 	public String getName() {
 		return name;
+	}
+	public void setHasOutstandingBalance(boolean hasOutstandingBalance) {
+		this.hasOutstandingBalance = hasOutstandingBalance;
 	}
 	public void setName(String name) {
 		this.name = name;
