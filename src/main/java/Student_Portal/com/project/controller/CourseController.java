@@ -45,15 +45,17 @@ public class CourseController {
 		return courses;
 	}
 	
+	@GetMapping("/Course/delete/{id}")
+	public void deleteByid(@PathVariable Long id) {
+		course_Service.deleteCourse(id);
+	}
+	
 	@PostMapping("/courses")
 	public void addCourse(@RequestBody Courses course) {
 		course_Service.addCourse(course);
 	}
 	
-	@GetMapping("/Course/delete/{id}")
-	public void deleteByid(@PathVariable Long id) {
-		course_Service.deleteCourse(id);
-	}
+	
 	
 	@GetMapping("/course/{course_name}/student/{student_id}")
 	public void addCourseByStudentId(@PathVariable String course_name,@PathVariable String student_id){
